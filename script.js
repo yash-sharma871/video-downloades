@@ -10,3 +10,12 @@ function downloadVideo() {
 
     // Backend API call yahan kar sakte ho
 }
+function getDownload() {
+  const url = document.getElementById("url").value;
+
+  document.getElementById("result").innerHTML = `
+    <a href="${url}" download>
+      Download Video
+    </a>
+  `;
+}
